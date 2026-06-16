@@ -480,10 +480,17 @@ h4{
 .login-page{
     align-self: center;
    margin: auto;
+   
 }
 
 .login-container{
     display: flex;
+    position: absolute;
+    margin: auto;
+    left:10%;
+    right: 10%;
+    top: 20%;
+    bottom: 30%;
     flex: 1;
      background: linear-gradient(1989deg, #05b6f7, #1ae1a2, #51eded ) ;
     flex-direction: column;
@@ -492,6 +499,7 @@ h4{
     border: 2px solid ;
     align-items: center;
     margin: auto;
+    border-radius: 20px;
     
 }
 .login-header{
