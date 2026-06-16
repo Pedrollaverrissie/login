@@ -424,23 +424,31 @@ body.login-popup{
      
      vertical-align: middle;
 }
-.line{
+.line, .line2{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.line::before,
-.line::after {
+.line ,.line2::before,
+.line ,.line2::after {
     content: "";
     width: 161px; /* line length */
     height: 1px;
     background: black;
 }
-.line::before {
+.line2::before,
+.line2::after {
+    content: "";
+    width: 78px; /* line length */
+    height: 1px;
+    background: rgb(141, 140, 140);
+}
+
+.line ,.line2::before {
     margin-right: 10px;
 }
 
-.line::after {
+.line ,.line2::after {
     margin-left: 10px;
 }
 .login-popup input{
@@ -480,35 +488,58 @@ h4{
 .login-page{
     align-self: center;
    margin: auto;
+   height: 90vh;
    
 }
-
+body{
+    height: 95vh;
+    background-color: rgb(14, 13, 13);
+}
 .login-container{
+    margin-top: 80px;
     display: flex;
     flex: 1;
-     background: linear-gradient(1989deg, #05b6f7, #1ae1a2, #51eded ) ;
+     background: rgb(24, 10, 42);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     flex-direction: column;
     justify-content: center;
     align-self: center;
     border: 2px solid ;
     align-items: center;
-    margin: auto;
+     color: white;
     border-radius: 20px;
+    font-size: 12px;
     
+}
+.password{
+    display: flex;
+    justify-content: space-between;
+    width: 264px;
+   
+}
+.forgot{
+    color: rgb(234, 179, 8); ;
+     cursor: pointer;
+
+}
+.forgot:hover{
+    text-decoration: underline;
 }
 .login-header{
     display: flex;
     flex-direction: column;
+    color: white;
 }
 .top{
     display: flex;
     align-items: center;
     gap: 20px;
     width: 264px;
+   
 }
 .notice{
     display: flex;
-    border: 1px solid yellow;
+    border: 0.1px solid yellow;
     border-radius: 10px;
     height: 25px;
     align-items: center;
@@ -518,11 +549,17 @@ h4{
    margin-left: 10px;
    margin-right: 10px;
 }
+.notice span{
+    color: rgb(234, 179, 8);
+}
 .login-logo{
  width: 60px;
+ height: 60px;
+
 }
 .login-logo img{
     width: 100%;
+    border-radius: 50%;
 }
 .credentials{
     display: flex;
@@ -532,6 +569,7 @@ h4{
   
 }
 .credentials input{
+     color:black;
     margin-bottom: 10px;
     height: 25px;
      border-radius: 10px;
@@ -553,7 +591,9 @@ h4{
     margin-top: 10px;
     background-color: greenyellow;
     vertical-align: center;
+    cursor: pointer;
 }
+
 .checkbox p{
     
      vertical-align: center;
@@ -570,7 +610,8 @@ h4{
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    border: 1px solid palevioletred;
+    border: 1px solid rgb(216, 174, 112);
+    cursor: pointer;
 }
 .media{
     display: flex;
@@ -587,6 +628,9 @@ h4{
     border: 1px solid grey;
     
 }
+.media button:hover{
+    cursor: pointer;
+}
 .media img{
     width: 30%;
    
@@ -594,4 +638,13 @@ h4{
 }
 .root span{
     color: rgb(234, 179, 8);
+    margin-left: 4px;
+}
+.root span:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.line2{
+    font-size: 8.5px;
+    color: grey;
 }
