@@ -526,12 +526,15 @@ body{
     text-decoration: underline;
 }
 .show-password input{
-    width: 216px;
+    width: 210px;
     margin-bottom: 0;
-    padding-right: 33px;
+    padding-right: 40px;
     margin-left: 0px;
     
     
+}
+.show-password input::placeholder{
+  color: rgb(123, 122, 122);
 }
 .show-password{
     gap: 0;
@@ -542,18 +545,23 @@ body{
    position: relative; 
     
 }
+
 .eye{
     width: 20px;
     position: absolute;
     cursor: pointer;
     right: 10px;
-    top: 4px;
+    top: 5px;
+    text-align: center;
+   
+  
    
 }
 .eye img{
     width: 100%;
     mix-blend-mode: multiply;
     z-index: 1;
+    vertical-align: middle;
 }
 .login-header{
     display: flex;
@@ -667,7 +675,7 @@ body{
     cursor: pointer;
 }
 .media img{
-    width: 30%;
+    width: 40%;
    
     mix-blend-mode: multiply;
 }
