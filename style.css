@@ -525,6 +525,36 @@ body{
 .forgot:hover{
     text-decoration: underline;
 }
+.show-password input{
+    width: 216px;
+    margin-bottom: 0;
+    padding-right: 33px;
+    margin-left: 0px;
+    
+    
+}
+.show-password{
+    gap: 0;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   vertical-align: center;
+   position: relative; 
+    
+}
+.eye{
+    width: 20px;
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+    top: 4px;
+   
+}
+.eye img{
+    width: 100%;
+    mix-blend-mode: multiply;
+    z-index: 1;
+}
 .login-header{
     display: flex;
     flex-direction: column;
@@ -570,12 +600,15 @@ body{
 }
 .credentials input{
      color:black;
-    margin-bottom: 10px;
-    height: 25px;
+     height: 25px;
      border-radius: 10px;
      border: 1px solid rgb(165, 165, 165);
      padding-left: 14px;
+     background-color: rgb(225, 223, 223);
    
+}
+.email-input{
+    margin-bottom: 10px;
 }
 .checkbox{
     display: flex;
@@ -610,8 +643,10 @@ body{
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    border: 1px solid rgb(216, 174, 112);
+    border: 1px solid rgb(135, 114, 114);
     cursor: pointer;
+    background-color: rgb(25, 25, 25);
+    color: rgb(6, 214, 241);
 }
 .media{
     display: flex;
